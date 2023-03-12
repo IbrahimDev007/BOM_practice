@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>prompt</title>
+	</head>
+	<body>
+        <!-- prompt use to add 200 -->
+		<button
+			onclick="add200()">add200</button>
+            <!-- alert use to check location  -->
+            <button onclick="sitelocation()">location</button>
+            <!-- clear local storage -->
+            <button onclick="clearStore()">clear local storage</button>
+<!-- level 1 task -->
+<legend>
+    <input type="text" placeholder="names" id="userName">
+    <input type="text" placeholder="age" id="userAge">
+    <button onclick="setkey()" >submit</button>
+    <button onclick="setObj()">setasObj</button>
+    <button onclick="removeKey()">RemovefromLocalStorsge</button>
+</legend>
+<!-- lavel 2 task -->
+<p id="num" >
+
+</p>
+<button onclick="count()">Count</button>
+<button onclick="reSet()">reset</button>
+
+
+<script>
+    // location check function 
+const sitelocation=()=>{
+    let userInput=confirm('do yo want to see site location')
+   if (userInput===true) {
+      console.log(window.location.href);
+   } else {
+    console.log('thank for your feedback');
+   }
+
+}
+
+
+</script>
+		<script src="pompt.js"></script>
+	</body>
+</html>
